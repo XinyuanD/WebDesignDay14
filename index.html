@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Truth and One Lie</title>
+</head>
+<body style="background-color: beige;">
+    <h1>Xinyuan's Truth and Lie Game</h1>
+    <hr>
+
+    <h2>Introduction</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="age" id="age"><br>
+    </form>
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet()">
+    <p id="greet" style="font-size: x-large;">Welcome!</p>
+    <hr>
+
+    <h2>Warm up trivia question</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="trivia1-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br>
+    </form>
+    <br>
+    <input type="button" value="Check Answer" onclick="trivia1();">
+    <hr>
+
+    <h2>Two truths and a lie. Which one is the lie?</h2>
+    <p id="trivia2-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia2" id="truth1">
+        <label for="truth1">Both my parents are over 60 years old</label><br>
+        <input type="radio" name="trivia2" id="truth2">
+        <label for="truth2">I spent two thirds of my life in China</label><br>
+        <input type="radio" name="trivia2" id="lie">
+        <label for="lie">I have been playing chess for over 10 years</label><br>
+    </form>
+    <br>
+    <input type="button" value="Check Answer" onclick="trivia2();">
+    <hr>
+
+    <script src="js/truth.js"></script>
+</body>
+
+</html>
